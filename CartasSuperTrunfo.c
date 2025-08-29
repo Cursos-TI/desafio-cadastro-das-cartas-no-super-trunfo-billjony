@@ -51,12 +51,12 @@ int main(){
    
 
     //Saida de mensagem escritas 
-    
+    printf("1ª Carta\n");
     printf("\nEstado: %s - Cidade: %s - Cod: %s\n", estado, cidade1, coda1);
     printf("População: %d - Área em km²: %.2f\n", populacao1, area1); 
     printf("PIB: %.2f - Pontos turísticos: %d\n\n\n", pib1, turistico1);
 
-
+    printf("2ª Carta\n");
     printf("\nEstado: %s - Cidade: %s - Cod: %s\n", estado, cidade2, coda2);
     printf("População: %d - Área em km²: %.2f\n", populacao2, area2); 
     printf("PIB: %.2f - Pontos turísticos: %d\n", pib2, turistico2);
