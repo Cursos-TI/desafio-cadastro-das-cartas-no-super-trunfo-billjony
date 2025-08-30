@@ -11,13 +11,14 @@ int main(){
     int populacao1, populacao2, turistico1, turistico2; // população e numero de pontos turísticos
     float area1, area2, pib1, pib2; // aréa em km² e PIB
 
-    char estado[20] = "São Paulo";
-    char coda1[5] = "A01"; // codigo da primeira carta
-    char coda2[5] = "A02"; // codigo da segunda carta
+    char estado1 = 'A';
+    char estado2 = 'B';
+    char coda1[5] = "01"; // codigo da primeira carta
+    char coda2[5] = "02"; // codigo da segunda carta
 
     // Cadastro da Primeira carta
     printf("Cadastre a 1º carta\n");
-    printf("Escreva o nome de uma cidade do estado de %s:\n", estado);
+    printf("Escreva o nome de uma cidade do estado de %c:\n", estado1);
     scanf("%s", cidade1);
 
     printf("Digite a população atual de %s:\n", cidade1);
@@ -34,7 +35,7 @@ int main(){
 
     //Segunda Carta para cadastrar
     printf("\n\nCadastro da 2ª carta\n");
-    printf("Escreva o nome de uma cidade do estado de %s:\n", estado);
+    printf("Escreva o nome de uma cidade do estado de %c:\n", estado2);
     scanf("%s", cidade2);
 
     printf("Digite a população atual de %s:\n", cidade2);
@@ -52,14 +53,14 @@ int main(){
 
     //Saida de mensagem escritas 
     printf("\n1ª Carta\n");
-    printf("Estado: %s - Cidade: %s - Cod: %s\n", estado, cidade1, coda1);
-    printf("População: %d - Área em km²: %.2f\n", populacao1, area1); 
-    printf("PIB: %.2f - Pontos turísticos: %d\n\n\n", pib1, turistico1);
+    printf("Estado: %c\nCódigo: %c%s\nCidade: %s\n", estado1, estado1, coda1, cidade1);
+    printf("População: %d\nÁrea: %.2f Km²\n", populacao1, area1); 
+    printf("PIB: %.2f Bilhões de Reais\nPontos turísticos: %d\n\n\n", pib1, turistico1);
 
     printf("\n2ª Carta\n");
-    printf("Estado: %s - Cidade: %s - Cod: %s\n", estado, cidade2, coda2);
-    printf("População: %d - Área em km²: %.2f\n", populacao2, area2); 
-    printf("PIB: %.2f - Pontos turísticos: %d\n", pib2, turistico2);
+    printf("Estado: %c\nCódigo: %c%s\nCidade: %s\n", estado2, estado2, coda2, cidade2);
+    printf("População: %d\nÁrea: %.2f Km²\n", populacao2, area2); 
+    printf("PIB: %.2f Bilhões de Reais\nPontos turísticos: %d\n", pib2, turistico2);
     
 
 
